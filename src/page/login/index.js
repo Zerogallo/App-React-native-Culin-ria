@@ -49,7 +49,7 @@ export default function Login() {
           onPress={() => setIcon(!icon)}
         />
       </View>
-      <Button label={"Enter"} onPress={getLogin} />
+      <Button label={"Enter"} onPress={getLogin} icon={"log-in-outline"} />
 
       <View style={styles.iconcont}>
         <Ionicons name="logo-google" style={styles.icon} />

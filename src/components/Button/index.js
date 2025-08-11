@@ -1,7 +1,14 @@
-import { Text, TouchableOpacity } from "react-native";
+import { Text, TouchableOpacity, View } from "react-native";
 import { styles } from "./styles";
+import { Ionicons } from "@expo/vector-icons";
 
-export function Button({ variant = "primary", onPress, label, isSelected }) {
+export function Button({
+  variant = "primary",
+  onPress,
+  label,
+  isSelected,
+  icon,
+}) {
   return (
     <TouchableOpacity
       onPress={onPress}
@@ -13,7 +20,10 @@ export function Button({ variant = "primary", onPress, label, isSelected }) {
             : styles.buttonSecondary),
       ]}
     >
-      <Text style={styles.buttonText}>{label}</Text>
+      <View style={styles.boxButton}>
+        <Text style={styles.buttonText}>{label}</Text>
+        <Ionicons name={icon} style={styles.icon}></Ionicons>
+      </View>
     </TouchableOpacity>
   );
 }

@@ -1,6 +1,7 @@
 export const categorias = [
   {
     idCategoria: 1,
+    strValor: 125,
     strCategory: "Carne bovina",
     strCategoryThumb: "https://www.themealdb.com/images/category/beef.png",
     strCategoryImage: require("../img/categoriasImg/beef.png"),
@@ -9,6 +10,7 @@ export const categorias = [
   },
   {
     idCategoria: 2,
+    strValor: 100,
     strCategory: "Frango",
     strCategoryThumb: "https://www.themealdb.com/images/category/chicken.png",
     strCategoryImage: require("../img/categoriasImg/chicken.png"),
@@ -17,6 +19,7 @@ export const categorias = [
   },
   {
     idCategoria: 3,
+    strValor: 90,
     strCategory: "Sobremesa",
     strCategoryThumb: "https://www.themealdb.com/images/category/dessert.png",
     strCategoryImage: require("../img/categoriasImg/dessert.png"),
@@ -25,6 +28,7 @@ export const categorias = [
   },
   {
     idCategoria: 4,
+    strValor: 100,
     strCategory: "Cordeiro",
     strCategoryThumb: "https://www.themealdb.com/images/category/lamb.png",
     strCategoryImage: require("../img/categoriasImg/lamb.png"),
@@ -33,6 +37,7 @@ export const categorias = [
   },
   {
     idCategoria: 5,
+    strValor: 80,
     strCategory: "Diversos",
     strCategoryThumb:
       "https://www.themealdb.com/images/category/miscellaneous.png",
@@ -42,6 +47,7 @@ export const categorias = [
   },
   {
     idCategoria: 6,
+    strValor: 105,
     strCategory: "Massa",
     strCategoryThumb: "https://www.themealdb.com/images/category/pasta.png",
     strCategoryImage: require("../img/categoriasImg/pasta.png"),
@@ -50,6 +56,7 @@ export const categorias = [
   },
   {
     idCategoria: 7,
+    strValor: 100,
     strCategory: "Carne de porco",
     strCategoryThumb: "https://www.themealdb.com/images/category/pork.png",
     strCategoryImage: require("../img/categoriasImg/pork.png"),
@@ -58,6 +65,7 @@ export const categorias = [
   },
   {
     idCategoria: 8,
+    strValor: 110,
     strCategory: "Frutos do mar",
     strCategoryThumb: "https://www.themealdb.com/images/category/seafood.png",
     strCategoryImage: require("../img/categoriasImg/seafood.png"),
@@ -66,6 +74,7 @@ export const categorias = [
   },
   {
     idCategoria: 9,
+    strValor: 100,
     strCategory: "Lado",
     strCategoryThumb: "https://www.themealdb.com/images/category/side.png",
     strCategoryImage: require("../img/categoriasImg/side.png"),
@@ -74,6 +83,7 @@ export const categorias = [
   },
   {
     idCategoria: 10,
+    strValor: 100,
     strCategory: "Inicial",
     strCategoryThumb: "https://www.themealdb.com/images/category/starter.png",
     strCategoryImage: require("../img/categoriasImg/starter.png"),
@@ -82,6 +92,7 @@ export const categorias = [
   },
   {
     idCategoria: 11,
+    strValor: 100,
     strCategory: "Vegano",
     strCategoryThumb: "https://www.themealdb.com/images/category/vegan.png",
     strCategoryImage: require("../img/categoriasImg/vegan.png"),
@@ -90,6 +101,7 @@ export const categorias = [
   },
   {
     idCategoria: 12,
+    strValor: 100,
     strCategory: "Vegetariano",
     strCategoryThumb:
       "https://www.themealdb.com/images/category/vegetarian.png",
@@ -99,6 +111,7 @@ export const categorias = [
   },
   {
     idCategoria: 13,
+    strValor: 100,
     strCategory: "Café da manhã",
     strCategoryThumb: "https://www.themealdb.com/images/category/breakfast.png",
     strCategoryImage: require("../img/categoriasImg/breakfast.png"),
@@ -107,6 +120,7 @@ export const categorias = [
   },
   {
     idCategoria: 14,
+    strValor: 100,
     strCategory: "Cabra",
     strCategoryThumb: "https://www.themealdb.com/images/category/goat.png",
     strCategoryImage: require("../img/categoriasImg/goat.png"),

@@ -1,20 +1,32 @@
 import { View, Text, Image, ScrollView } from "react-native";
 import { categorias } from "../../services/categorias";
 import { styles } from "./styles";
+import { Button } from "../Button";
 
 export default function Card() {
   return (
     <>
       <ScrollView showsVerticalScrollIndicator={false}>
         {categorias.map((item) => (
-          <View key={item.idCategoria} style={styles.container}>
-            <Image source={item.strCategoryImage} style={styles.boxImg} />
-            <View style={styles.boxText}>
-              <Text style={styles.titlo}>{item.strCategory}</Text>
-              <Text>{item.strCategoryDescription}</Text>
+          <View>
+            <View key={item.idCategoria} style={styles.container}>
+              <View>
+                <Image source={item.strCategoryImage} style={styles.boxImg} />
+                <View style={styles.boxText}>
+                  <Text style={styles.titlo}>{item.strCategory}</Text>
+                  <Text style={styles.boxContText}>
+                    {item.strCategoryDescription}
+                  </Text>
+                </View>
+              </View>
+              <View style={styles.boxButt}>
+                <Text style={styles.Valor}>R$:{item.strValor}</Text>
+                <Button label={"Adicionar"} icon={"log-in-outline"} />
+              </View>
             </View>
           </View>
         ))}
+        <Text style={styles.fim}>Fim do categorias</Text>
       </ScrollView>
     </>
   );
