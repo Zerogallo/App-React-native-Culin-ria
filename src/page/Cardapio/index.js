@@ -1,20 +1,31 @@
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, TouchableOpacity } from "react-native";
 import { styles } from "./styles";
-import Card from "../../components/card";
-import Header from "../../components/header";
 
-export default function Cardapio(props) {
+import Header from "../../components/header";
+import Card from "../../components/card";
+import CardB from "../../components/cardB";
+
+export default function Cardapio() {
   return (
     <>
       <Header />
-      <View style={styles.container}>
-        <Image
-          source={require("../../img/grapefruit.svg")}
-          style={styles.boxImg}
-        />
-        <Text>Cardapio</Text>
-        <Card />
-      </View>
+
+      <TouchableOpacity style={styles.container}>
+        <View style={styles.boxCont}>
+          <Image
+            source={require("../../img/curry.png")}
+            style={styles.boxImg}
+          />
+          <Text style={styles.boxtext}>Cardapio</Text>
+        </View>
+        <View style={styles.boxCont}>
+          <Image
+            source={require("../../img/licor.png")}
+            style={styles.boxImg}
+          />
+          <Text style={styles.boxtext}>Bebida</Text>
+        </View>
+      </TouchableOpacity>
     </>
   );
 }
