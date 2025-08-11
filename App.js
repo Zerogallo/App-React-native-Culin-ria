@@ -1,16 +1,10 @@
-import { StatusBar } from "expo-status-bar";
-import { SafeAreaView, View } from "react-native";
-
-import { styles } from "./App.styles";
-import Longi from "./src/page/longi/longiP1";
+import { NavigationContainer } from "@react-navigation/native";
+import { RootStack } from "./src/routes/routes";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <SafeAreaView>
-        <StatusBar style="auto" />
-        <Longi />
-      </SafeAreaView>
-    </View>
+    <NavigationContainer>
+      <RootStack />
+    </NavigationContainer>
   );
 }

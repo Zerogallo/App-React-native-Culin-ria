@@ -2,12 +2,16 @@ import { View, Text, Image, Alert } from "react-native";
 
 import { styles } from "./styles";
 
-import { Input } from "../../../components/input";
-import { Button } from "../../../components/Button";
 import { Ionicons } from "@expo/vector-icons";
 import { useState } from "react";
+import { Input } from "../../components/input";
+import { Button } from "../../components/Button";
+import { useNavigation, NavigationProp } from "@react-navigation/native";
+import { MyTabs } from "../../routes/Bottom.routes";
 
-export default function Longi() {
+export default function Login() {
+  const navgation = useNavigation();
+
   const [emall, setEmail] = useState("");
   const [passWord, setpassWord] = useState("");
   const [icon, setIcon] = useState(true);
@@ -17,6 +21,7 @@ export default function Longi() {
       if (!emall || !passWord) {
         return Alert.alert("Atenção", "Informe os campos obrigatorios!");
       }
+      navgation.navigate(MyTabs);
       Alert.alert("Logado", "Com sucesso!");
     } catch (error) {
       console.log(error);
@@ -25,7 +30,7 @@ export default function Longi() {
 
   return (
     <View style={styles.container}>
-      <Image source={require("../../../img/icon.png")} />
+      <Image source={require("../../img/icon.png")} />
       <Text style={styles.textos}>Login</Text>
       <View style={styles.fundo}>
         <Input

@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
     paddingVertical: 8,
     margin: 4,
     borderRadius: 8,
-    width: "100%",
+    width: "90%",
     alignItems: "center",
     justifyContent: "center",
   },
