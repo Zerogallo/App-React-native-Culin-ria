@@ -1,24 +1,14 @@
-import {
-  View,
-  Text,
-  Image,
-  TouchableOpacity,
-  Dimensions,
-  ScrollView,
-} from "react-native";
+import { View, Text, Image, Dimensions, ScrollView } from "react-native";
 
 import { styles } from "./styles";
-import Header from "../../components/header";
+
 import { categorias } from "../../services/categorias";
-import Card from "../../components/card";
 
 export default function HomeScreen() {
   const { width } = Dimensions.get("window");
 
   return (
     <>
-      <Header />
-
       <View style={styles.container}>
         <ScrollView
           horizontal
@@ -40,8 +30,6 @@ export default function HomeScreen() {
             />
           ))}
         </ScrollView>
-
-        <Card />
       </View>
     </>
   );
