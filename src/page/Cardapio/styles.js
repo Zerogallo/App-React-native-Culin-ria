@@ -10,13 +10,7 @@ export const styles = StyleSheet.create({
     marginHorizontal: 50,
   },
   boxImg: {
-    width: 100,
-    height: 100,
-  },
-
-  boxtext: {
-    fontSize: 20,
-    fontWeight: "bold",
-    textAlign: "center",
+    width: 50,
+    height: 50,
   },
 });

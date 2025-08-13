@@ -9,10 +9,7 @@ const Tab = createBottomTabNavigator();
 
 export function MyTabs() {
   return (
-    <Tab.Navigator
-      initialRouteName="Home"
-      screenOptions={{ headerShown: false }}
-    >
+    <Tab.Navigator initialRouteName="Home">
       <Tab.Screen
         name="Cardapio"
         component={Cardapio}

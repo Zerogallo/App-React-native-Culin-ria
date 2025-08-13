@@ -5,8 +5,8 @@ export const styles = StyleSheet.create({
   container: {
     backgroundColor: colors.textsecondary,
     borderRadius: 8,
-    padding: 40,
-    margin: 10,
+    padding: 5,
+    margin: 5,
     flexDirection: "row",
   },
 
@@ -15,8 +15,8 @@ export const styles = StyleSheet.create({
     height: 100,
     backgroundColor: colors.background,
     borderRadius: 8,
-    top: 30,
-    margin: 20,
+
+    margin: 5,
   },
   titlo: {
     fontSize: 20,
@@ -29,15 +29,13 @@ export const styles = StyleSheet.create({
   },
 
   boxText: {
-    margin: 20,
+    margin: 5,
   },
   boxContText: {
     width: 200,
   },
   boxButt: {
-    top: 150,
-  },
-  fim: {
-    margin: 100,
+    top: 50,
+    left: 100,
   },
 });

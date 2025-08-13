@@ -7,11 +7,10 @@ export const styles = StyleSheet.create({
     backgroundColor: colors.text,
     alignItems: "center",
     justifyContent: "center",
-    overflow: "hidden",
   },
   imgCard: {
+    top: 150,
     borderRadius: 8,
     width: 450,
-    height: 200,
   },
 });

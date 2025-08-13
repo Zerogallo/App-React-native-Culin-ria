@@ -1,31 +1,46 @@
-import { View, Text, Image, TouchableOpacity } from "react-native";
-import { styles } from "./styles";
+import { View, Image } from "react-native";
 
-import Header from "../../components/header";
+import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 import Card from "../../components/card";
 import CardB from "../../components/cardB";
+import { styles } from "./styles";
+
+const Tab = createMaterialTopTabNavigator();
 
 export default function Cardapio() {
   return (
     <>
-      <Header />
-
-      <TouchableOpacity style={styles.container}>
-        <View style={styles.boxCont}>
-          <Image
-            source={require("../../img/curry.png")}
-            style={styles.boxImg}
-          />
-          <Text style={styles.boxtext}>Cardapio</Text>
-        </View>
-        <View style={styles.boxCont}>
-          <Image
-            source={require("../../img/licor.png")}
-            style={styles.boxImg}
-          />
-          <Text style={styles.boxtext}>Bebida</Text>
-        </View>
-      </TouchableOpacity>
+      <View style={styles.container}></View>
+      <Tab.Navigator initialRouteName="Cardapio">
+        <Tab.Screen
+          name="Cardapio"
+          component={Card}
+          options={{
+            tabBarIcon: ({ focused }) => (
+              <View style={styles.boxCont}>
+                <Image
+                  source={require("../../img/curry.png")}
+                  style={styles.boxImg}
+                />
+              </View>
+            ),
+          }}
+        />
+        <Tab.Screen
+          name="Bebida"
+          component={CardB}
+          options={{
+            tabBarIcon: ({ focused }) => (
+              <View style={styles.boxCont}>
+                <Image
+                  source={require("../../img/licor.png")}
+                  style={styles.boxImg}
+                />
+              </View>
+            ),
+          }}
+        />
+      </Tab.Navigator>
     </>
   );
 }

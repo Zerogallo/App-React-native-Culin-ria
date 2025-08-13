@@ -27,7 +27,6 @@ export default function CardB() {
             </View>
           </View>
         ))}
-        <Text style={styles.fim}>Fim do categorias</Text>
       </ScrollView>
     </>
   );
